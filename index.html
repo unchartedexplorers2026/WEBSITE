@@ -34,7 +34,7 @@
       list-style: none;
       margin: 0;
       padding: 0;
-      display: flex;
+      display: flex; /* always horizontal */
     }
     nav ul li {
       position: relative;
@@ -61,6 +61,7 @@
       background-color: rgb(208, 222, 189);
       min-width: 180px;
       border-radius: 0 0 8px 8px;
+      z-index: 1000;
     }
     nav ul li:hover ul {
       display: block;
@@ -93,15 +94,12 @@
     /* Mobile-friendly adjustments */
     @media (max-width: 600px) {
       nav ul {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row; /* keep horizontal */
+        flex-wrap: wrap;     /* allow wrapping if needed */
       }
       nav ul li {
-        width: 100%;
-      }
-      nav ul li a {
+        flex: 1 1 auto;
         text-align: center;
-        width: 100%;
       }
     }
   </style>
@@ -120,8 +118,9 @@
     <ul>
       <li><a href="#overview">Overview</a></li>
       <li>
-        <a href="#new-event">New Event</a>
+        <a href="#">New Event ▾</a> <!-- dropdown toggle only -->
         <ul>
+          <li><a href="#new-event">Event Overview</a></li>
           <li><a href="#brochure">Brochure</a></li>
           <li><a href="#itinerary">Itinerary</a></li>
         </ul>
@@ -175,7 +174,7 @@
     <p><strong>Location:</strong> Moka (Minissy Waterfall) & Albion Beach</p>
     <h3>Itinerary</h3>
     <ul>
-      <li>08:00 AM – Distribution of breakfast and speech</li>
+      <li>08:00 AM – Distribution of breakfast & speech</li>
       <li>08:15 AM – Departure from school</li>
       <li>08:50 AM – Arrival at Minissy Waterfall</li>
       <li>08:55 AM – Start trekking</li>
@@ -189,7 +188,7 @@
       <li>12:30 PM – Ending activities</li>
       <li>01:00 PM – Lunch</li>
       <li>01:45 PM – Treasure hunt</li>
-      <li>02:15 PM – Distribution of gifts and closing speech</li>
+      <li>02:15 PM – Distribution of gifts & closing speech</li>
       <li>02:30 PM – Departure from Albion Beach</li>
     </ul>
   </section>
@@ -206,5 +205,4 @@
   </footer>
 
 </body>
-</html>
 </html>
