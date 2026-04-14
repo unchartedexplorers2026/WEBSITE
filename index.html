@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uncharted Explorers</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: linear-gradient(to bottom, #bcd9bc, #d9e8d9); /* stronger pale green gradient */
+      color: #333;
+    }
+    header {
+      background-color: rgb(208, 222, 189); /* header color */
+      color: #333;
+      padding: 30px;
+      text-align: center;
+    }
+    header img {
+      max-width: 120px;
+      display: block;
+      margin: 0 auto 10px;
+    }
+
+    /* Navigation bar */
+    nav {
+      background-color: rgb(208, 222, 189); /* same as header/footer */
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+    nav ul li {
+      position: relative;
+    }
+    nav ul li a {
+      display: block;
+      padding: 12px 20px;
+      color: #333; /* dark text for contrast */
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+      border-radius: 6px;
+    }
+    nav ul li a:hover {
+      background-color: #c0d2a8; /* slightly darker shade */
+    }
+
+    /* Dropdown styling */
+    nav ul li ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: rgb(208, 222, 189);
+      min-width: 180px;
+      border-radius: 0 0 8px 8px;
+    }
+    nav ul li:hover ul {
+      display: block;
+    }
+    nav ul li ul li a {
+      padding: 10px 15px;
+    }
+
+    section {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      color: #2e8b57;
+    }
+    footer {
+      background-color: rgb(208, 222, 189); /* footer color */
+      color: #333;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+    .brochure-img {
+      max-width: 100%;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+    /* Mobile-friendly adjustments */
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+      nav ul li {
+        width: 100%;
+      }
+      nav ul li a {
+        text-align: center;
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <img src="2.png" alt="Uncharted Explorers Logo">
+    <h1>UNCHARTED EXPLORERS</h1>
+    <p>DARE TO EXPLORE THE UNKNOWN</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#overview">Overview</a></li>
+      <li>
+        <a href="#new-event">New Event</a>
+        <ul>
+          <li><a href="#brochure">Brochure</a></li>
+          <li><a href="#itinerary">Itinerary</a></li>
+        </ul>
+      </li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Sections -->
+  <section id="overview">
+    <h2>About Us</h2>
+    <p>
+      <strong>Uncharted Explorers</strong> is a nature-focused guided exploration service dedicated to helping people experience the hidden beauty of Mauritius. Our vision is to inspire curiosity, adventure, and a deeper connection with the environment by guiding explorers to places that are often overlooked or unknown.
+    </p>
+    <p>
+      We pride ourselves on creating journeys that are safe, well-organized, and enriching, while fostering a spirit of discovery and appreciation for the natural world. Whether you’re a local seeking new experiences or a visitor eager to uncover the island’s secrets, Uncharted Explorers is here to lead the way.
+    </p>
+  </section>
+
+  <!-- New Event Section -->
+  <section id="new-event">
+    <h2>New Event Coming Soon!</h2>
+    <p style="text-align:center">
+      From the green heart of Mauritius to its golden coastal edge | Join us for our next immersive adventure.
+    </p>
+
+    <h3>The Mission</h3>
+    <p>
+      Our upcoming event bridges the gap between classroom learning and real-world exploration. By moving from the lush highlands to the vibrant shoreline, participants will discover the island’s geographic diversity while strengthening teamwork and connection.
+    </p>
+
+    <h3>Part 1: The Highland Escape</h3>
+    <p>
+      Starting at <strong>Minissy Waterfall</strong>, explorers will trek scenic trails surrounded by tropical greenery. This stage emphasizes environmental appreciation and the importance of preserving Mauritius’s inland ecosystems.
+    </p>
+
+    <h3>Part 2: The Coastal Challenge</h3>
+    <p>
+      The adventure continues at <strong>Albion Beach</strong>, famous for its rugged cliffs and historic lighthouse. Here, the focus shifts to teamwork and fun with activities like the Three-Legged Race, Treasure Hunt, and Water Relay — all designed to build bonds and test coordination.
+    </p>
+  </section>
+
+  <section id="brochure">
+    <h2>Digital Brochure</h2>
+    <img src="brochure.jpg" alt="Brochure Preview" class="brochure-img">
+  </section>
+
+  <section id="itinerary">
+    <h2>Itinerary</h2>
+    <p><strong>Date:</strong> 16<sup>th</sup> April 2026</p>
+    <p><strong>Location:</strong> Moka (Minissy Waterfall) & Albion Beach</p>
+    <h3>Itinerary</h3>
+    <ul>
+      <li>08:00 AM – Distribution of breakfast and speech</li>
+      <li>08:15 AM – Departure from school</li>
+      <li>08:50 AM – Arrival at Minissy Waterfall</li>
+      <li>08:55 AM – Start trekking</li>
+      <li>09:10 AM – Visit</li>
+      <li>10:15 AM – Departure from Minissy Waterfall</li>
+      <li>10:45 AM – Arrival at Albion Beach</li>
+      <li>10:55 AM – Tug of war</li>
+      <li>11:15 AM – Hula hoop</li>
+      <li>11:30 AM – Three legged race</li>
+      <li>11:50 AM – Water relay</li>
+      <li>12:30 PM – Ending activities</li>
+      <li>01:00 PM – Lunch</li>
+      <li>01:45 PM – Treasure hunt</li>
+      <li>02:15 PM – Distribution of gifts and closing speech</li>
+      <li>02:30 PM – Departure from Albion Beach</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: unchartedexplorers2026@gmail.com</p>
+    <p>Instagram: @uncharted_explorers_2026</p>
+    <p>Follow us on social media for updates!</p>
+  </section>
+
+  <footer>
+    <p>&copy; Uncharted Explorers 2026</p>
+  </footer>
+
+</body>
+</html>
+</html>
